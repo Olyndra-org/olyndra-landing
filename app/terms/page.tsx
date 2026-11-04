@@ -4,15 +4,18 @@ import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = { title: "Terms of Service | Olyndra" };
 
-// TODO: replace the body below with the existing Terms of Service text from the
-// current olyndra.ai repository (app/terms/page.tsx).
+// The Terms of Service text lives in content/terms.tsx — edit it there.
+import { TermsofServiceContent } from "@/content/terms";
+
 export default function Page() {
   return (
     <main>
       <Header />
       <article className="container-x max-w-3xl py-16 lg:py-24">
         <h1 className="text-4xl font-bold">Terms of Service</h1>
-        <p className="mt-6 leading-relaxed">Paste the existing Terms of Service here.</p>
+        <div className="prose-olyndra mt-8">
+          <TermsofServiceContent />
+        </div>
       </article>
       <Footer />
     </main>

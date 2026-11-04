@@ -8,7 +8,6 @@ import { Logo } from "./logo";
 const links = [
   { href: "/#features", label: "Platform" },
   { href: "/#company", label: "Company" },
-  { href: "/#contact", label: "Contact" },
 ];
 
 export function Header() {

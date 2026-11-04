@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Linkedin } from "lucide-react";
 import { Logo } from "./logo";
 
 export function Footer() {
@@ -19,15 +18,11 @@ export function Footer() {
             <Link href="/terms" className="hover:text-navy">Terms</Link>
           </nav>
         </div>
-        <div className="mt-8 flex flex-col gap-4 border-t border-line pt-6 text-xs leading-relaxed md:flex-row md:items-center md:justify-between">
+        <div className="mt-8 border-t border-line pt-6 text-xs leading-relaxed">
           <p className="max-w-2xl">
             Olyndra Ltd | Registered in England and Wales | Company Number: 17171970 |
             Registered Office: 124-128 City Road, London, EC1V 2NX | contact@olyndra.ai
           </p>
-          <div className="flex items-center gap-4">
-            <a href="https://www.linkedin.com/in/rickyknox/" target="_blank" rel="noopener noreferrer" className="hover:text-navy" aria-label="Ricky Knox on LinkedIn"><Linkedin className="h-4 w-4" /></a>
-            <a href="https://www.linkedin.com/in/noamzeigerson/" target="_blank" rel="noopener noreferrer" className="hover:text-navy" aria-label="Noam Zeigerson on LinkedIn"><Linkedin className="h-4 w-4" /></a>
-          </div>
         </div>
       </div>
     </footer>

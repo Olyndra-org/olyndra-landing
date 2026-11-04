@@ -2,8 +2,12 @@
 
 import { useState } from "react";
 
-// Same Web3Forms key as the current olyndra.ai early-access form.
-const WEB3FORMS_ACCESS_KEY = "aaea8fcf-7152-4f73-96ca-d2a8f539fcca";
+// Submissions are emailed by Web3Forms to the address the access key was
+// created for. Set NEXT_PUBLIC_WEB3FORMS_KEY in Vercel (Settings → Environment
+// Variables) to a key created for sales@olyndra.ai; without it, the original
+// olyndra.ai key is used.
+const WEB3FORMS_ACCESS_KEY =
+  process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "aaea8fcf-7152-4f73-96ca-d2a8f539fcca";
 
 type Status = "idle" | "sending" | "sent" | "error";
 
