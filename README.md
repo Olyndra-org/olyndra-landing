@@ -15,8 +15,7 @@ npm run dev
 1. In the existing olyndra.ai repo, delete `app/`, `components/`, `public/` and copy these in
    (keep `.git/` and any Vercel config). Overwrite `package.json`, `tsconfig.json`,
    `next.config.ts`, `postcss.config.mjs`.
-2. **Privacy and Terms**: paste the old site's text into `content/privacy.tsx` and
-   `content/terms.tsx` (headings and paragraphs only).
+2. Privacy and Terms text (from the old site) is in `content/privacy.ts` and `content/terms.ts`.
 3. `npm install`, `npm run build`, commit and push. Vercel redeploys automatically.
 
 ## Where things live
